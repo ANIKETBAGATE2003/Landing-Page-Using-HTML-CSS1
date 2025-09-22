@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Landing Page</title>
+  <style>
+    /* Reset some default styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Body styles */
+    body {
+      font-family: Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.5;
+      color: #050404;
+    }
+
+    /* Header styles */
+    header {
+      background-color: #2eb2a7;
+      color: #fff;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo a {
+      color: #cc1a1a;
+      text-decoration: none;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    nav ul {
+      display: flex;
+      list-style-type: none;
+    }
+
+    nav ul li {
+      margin-left: 20px;
+    }
+
+    nav ul li a {
+      color: #030303;
+      text-decoration: none;
+    }
+
+    /* Hero section styles */
+    .hero {
+      background-image: url('hero-background.jpg');
+      background-size: cover;
+      background-position: center;
+      padding: 100px 20px;
+      text-align: center;
+      color: #0b361e;
+    }
+
+    .hero-content {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .hero h1 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      margin-bottom: 40px;
+    }
+
+    .cta-button {
+      display: inline-block;
+      background-color: #727d88;
+      color: #000000;
+      text-decoration: none;
+      padding: 12px 24px;
+      border-radius: 4px;
+      font-size: 16px;
+      transition: background-color 0.3s ease;
+    }
+
+    .cta-button:hover {
+      background-color: #0056b3;
+    }
+
+    /* Footer styles */
+    footer {
+      background-color: #93cfc7;
+      color: #070606;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .social-links a {
+      color: #4f3131;
+      margin: 0 10px;
+      font-size: 24px;
+    }
+
+    /* Responsive styles */
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        padding: 20px;
+      }
+
+      .logo {
+        margin-bottom: 20px;
+      }
+
+      nav ul {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      nav ul li {
+        margin: 10px 0;
+      }
+
+      .hero {
+        padding: 80px 20px;
+      }
+
+      .hero h1 {
+        font-size: 28px;
+      }
+
+      .hero p {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <a href="#">Logo</a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Welcome to Our Landing Page</h1>
+        <p>This is a simple, responsive landing page built with HTML and CSS.</p>
+        <a href="#" class="cta-button">Learn More</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="social-links">
+      <a href="#"><i class="fab fa-facebook-f"></i>Aniket bagate</a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i>@aniket_bagate_patil</a>
+    </div>
+  </footer>
+
+  <!-- Include Font Awesome for social media icons (optional) -->
+  <script src="https://kit.fontawesome.com/your-font-awesome-kit.js" crossorigin="anonymous"></script>
+</body>
+</html>
